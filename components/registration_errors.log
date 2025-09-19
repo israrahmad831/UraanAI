@@ -1,0 +1,550 @@
+[2025-08-11 17:45:35] Script execution started
+[2025-08-11 17:45:35] Attempting database connection
+[2025-08-11 17:45:35] Database connection successful
+[2025-08-11 17:45:35] Received input: {"teamLeadName":"Ali Asif","teamLeadEmail":"ali@gmail.com","teamLeadPhone":"03335727257","teamLeadInstitution":"Nust","teamName":"Habib and Co","teamSize":"2","problemStatement":"healthcare","termsAgreed":true}
+[2025-08-11 17:45:35] JSON decoded successfully
+[2025-08-11 17:45:35] Basic validation passed
+[2025-08-11 17:45:35] Advanced validation passed
+[2025-08-11 17:45:35] Duplicate check passed
+[2025-08-11 17:45:35] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-11 17:45:35] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_agent' in 'INSERT INTO'
+#0 /home/turnaroundpakist/public_html/uraanai/components/submit_registration.php(143): PDO->prepare()
+#1 {main}
+[2025-08-11 17:46:59] Script execution started
+[2025-08-11 17:46:59] Attempting database connection
+[2025-08-11 17:46:59] Database connection successful
+[2025-08-11 17:46:59] Received input: {"teamLeadName":"Ali Asif","teamLeadEmail":"ali@gmail.com","teamLeadPhone":"03335727257","teamLeadInstitution":"Nust","teamName":"Habib and Co","teamSize":"2","problemStatement":"healthcare","termsAgreed":true}
+[2025-08-11 17:46:59] JSON decoded successfully
+[2025-08-11 17:46:59] Basic validation passed
+[2025-08-11 17:46:59] Advanced validation passed
+[2025-08-11 17:46:59] Duplicate check passed
+[2025-08-11 17:46:59] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-11 17:46:59] Parameters bound, starting transaction
+[2025-08-11 17:46:59] Transaction committed successfully. New ID: 1
+[2025-08-14 22:01:40] Script execution started
+[2025-08-14 22:01:40] Attempting database connection
+[2025-08-14 22:01:40] Database connection successful
+[2025-08-14 22:01:40] Received input: {"teamLeadName":"Ali Asif","teamLeadEmail":"ali_devcom@gmail.com","teamLeadPhone":"03335727237","teamLeadInstitution":"Nust","teamName":"Habib and Co","teamSize":"2","problemStatement":"education","termsAgreed":true}
+[2025-08-14 22:01:40] JSON decoded successfully
+[2025-08-14 22:01:40] Basic validation passed
+[2025-08-14 22:01:40] Advanced validation passed
+[2025-08-14 22:01:40] Duplicate check passed
+[2025-08-14 22:01:40] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-14 22:01:40] Parameters bound, starting transaction
+[2025-08-14 22:01:40] Transaction committed successfully. New ID: 2
+[2025-08-17 15:34:32] Script execution started
+[2025-08-17 15:34:32] Attempting database connection
+[2025-08-17 15:34:32] Database connection successful
+[2025-08-17 15:34:32] Received input: 
+[2025-08-17 15:34:32] Exception: No data received
+[2025-08-17 15:34:37] Script execution started
+[2025-08-17 15:34:37] Attempting database connection
+[2025-08-17 15:34:37] Database connection successful
+[2025-08-17 15:34:37] Received input: 
+[2025-08-17 15:34:37] Exception: No data received
+[2025-08-17 16:42:35] Script execution started
+[2025-08-17 16:42:35] Attempting database connection
+[2025-08-17 16:42:35] Database connection successful
+[2025-08-17 16:42:35] Received input: {"teamLeadName":"Ali Asif","teamLeadEmail":"a@gmailc.om","teamLeadPhone":"03335727237","teamLeadInstitution":"Nust","teamName":"Habib and Co","teamSize":"3","problemStatement":"manufacturing","termsAgreed":true}
+[2025-08-17 16:42:35] JSON decoded successfully
+[2025-08-17 16:42:35] Basic validation passed
+[2025-08-17 16:42:35] Advanced validation passed
+[2025-08-17 16:42:35] Duplicate check passed
+[2025-08-17 16:42:35] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-17 16:42:35] Parameters bound, starting transaction
+[2025-08-17 16:42:35] Transaction committed successfully. New ID: 3
+[2025-08-17 16:44:14] Script execution started
+[2025-08-17 16:44:14] Attempting database connection
+[2025-08-17 16:44:14] Database connection successful
+[2025-08-17 16:44:14] Received input: {"teamLeadName":"AAA","teamLeadEmail":"sdf@gmail.com","teamLeadPhone":"03335727237","teamLeadInstitution":"DevCom","teamName":"Habib and Co","teamSize":"4","problemStatement":"manufacturing","termsAgreed":true}
+[2025-08-17 16:44:14] JSON decoded successfully
+[2025-08-17 16:44:14] Basic validation passed
+[2025-08-17 16:44:14] Advanced validation passed
+[2025-08-17 16:44:14] Duplicate check passed
+[2025-08-17 16:44:14] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-17 16:44:14] Parameters bound, starting transaction
+[2025-08-17 16:44:14] Transaction committed successfully. New ID: 4
+[2025-08-17 18:21:53] Script execution started
+[2025-08-17 18:21:53] Attempting database connection
+[2025-08-17 18:21:53] Database connection successful
+[2025-08-17 18:21:53] Received input: {"teamLeadName":"Tayyab Hanif","teamLeadEmail":"mrtayyabhanif@gmail.com","teamLeadPhone":"03078857970","teamLeadInstitution":"Startup","teamName":"Pak-IDS","teamSize":"4","problemStatement":"int-collaborations","termsAgreed":true}
+[2025-08-17 18:21:53] JSON decoded successfully
+[2025-08-17 18:21:53] Basic validation passed
+[2025-08-17 18:21:53] Advanced validation passed
+[2025-08-17 18:21:53] Duplicate check passed
+[2025-08-17 18:21:53] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-17 18:21:53] Parameters bound, starting transaction
+[2025-08-17 18:21:53] Transaction committed successfully. New ID: 5
+[2025-08-20 19:18:05] Script execution started
+[2025-08-20 19:18:05] Attempting database connection
+[2025-08-20 19:18:05] Database connection successful
+[2025-08-20 19:18:05] Received input: {"teamLeadName":"Muhammad Hassan Hanif","teamLeadEmail":"hassan@traversaal.ai","teamLeadPhone":"03361857786","teamLeadInstitution":"traversaal.ai ","teamName":"AlifEd ","teamSize":"4","problemStatement":"education","termsAgreed":true}
+[2025-08-20 19:18:05] JSON decoded successfully
+[2025-08-20 19:18:05] Basic validation passed
+[2025-08-20 19:18:05] Advanced validation passed
+[2025-08-20 19:18:05] Duplicate check passed
+[2025-08-20 19:18:05] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-20 19:18:05] Parameters bound, starting transaction
+[2025-08-20 19:18:05] Transaction committed successfully. New ID: 6
+[2025-08-22 12:24:53] Script execution started
+[2025-08-22 12:24:53] Attempting database connection
+[2025-08-22 12:24:53] Database connection successful
+[2025-08-22 12:24:53] Received input: {"teamLeadName":"Muhammad Ali Inayat ","teamLeadEmail":"ali@kinverg.com","teamLeadPhone":"03349867749","teamLeadInstitution":"Kinverg ","teamName":"Compliancemachine.ai","teamSize":"2","problemStatement":"defense-security","termsAgreed":true}
+[2025-08-22 12:24:53] JSON decoded successfully
+[2025-08-22 12:24:53] Basic validation passed
+[2025-08-22 12:24:53] Advanced validation passed
+[2025-08-22 12:24:53] Duplicate check passed
+[2025-08-22 12:24:53] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-22 12:24:53] Parameters bound, starting transaction
+[2025-08-22 12:24:53] Transaction committed successfully. New ID: 7
+[2025-08-26 08:12:44] Script execution started
+[2025-08-26 08:12:44] Attempting database connection
+[2025-08-26 08:12:44] Database connection successful
+[2025-08-26 08:12:44] Received input: {"teamLeadName":"hashim","teamLeadEmail":"hashim@gmail.com","teamLeadPhone":"03000123456","teamLeadInstitution":"nust","teamName":"nust","teamSize":"5","problemStatement":"governance","termsAgreed":true}
+[2025-08-26 08:12:44] JSON decoded successfully
+[2025-08-26 08:12:44] Basic validation passed
+[2025-08-26 08:12:44] Advanced validation passed
+[2025-08-26 08:12:44] Duplicate check passed
+[2025-08-26 08:12:44] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-26 08:12:44] Parameters bound, starting transaction
+[2025-08-26 08:12:44] Transaction committed successfully. New ID: 8
+[2025-08-26 08:13:51] Script execution started
+[2025-08-26 08:13:51] Attempting database connection
+[2025-08-26 08:13:51] Database connection successful
+[2025-08-26 08:13:51] Received input: {"teamLeadName":"usama","teamLeadEmail":"musamaa482@gmail.com","teamLeadPhone":"03035056682","teamLeadInstitution":"NUST","teamName":"NUST","teamSize":"5","problemStatement":"healthcare","termsAgreed":true}
+[2025-08-26 08:13:51] JSON decoded successfully
+[2025-08-26 08:13:51] Basic validation passed
+[2025-08-26 08:13:51] Advanced validation passed
+[2025-08-26 08:13:51] Duplicate check passed
+[2025-08-26 08:13:51] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-26 08:13:51] Parameters bound, starting transaction
+[2025-08-26 08:13:51] Transaction committed successfully. New ID: 9
+[2025-08-26 08:20:42] Script execution started
+[2025-08-26 08:20:42] Attempting database connection
+[2025-08-26 08:20:42] Database connection successful
+[2025-08-26 08:20:42] Received input: {"teamLeadName":"Qurat Ul Ain","teamLeadEmail":"kuratulain007@gmail.com","teamLeadPhone":"03339282343","teamLeadInstitution":"STEMverse","teamName":"STEMverse","teamSize":"2","problemStatement":"education","termsAgreed":true}
+[2025-08-26 08:20:42] JSON decoded successfully
+[2025-08-26 08:20:42] Basic validation passed
+[2025-08-26 08:20:42] Advanced validation passed
+[2025-08-26 08:20:42] Duplicate check passed
+[2025-08-26 08:20:42] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-08-26 08:20:42] Parameters bound, starting transaction
+[2025-08-26 08:20:42] Transaction committed successfully. New ID: 10
+[2025-08-26 09:12:26] Script execution started
+[2025-08-26 09:12:26] Attempting database connection
+[2025-08-26 09:12:26] Database connection successful
+[2025-08-26 09:12:26] Received input: 
+[2025-08-26 09:12:26] Exception: No data received
+[2025-09-01 09:58:40] Script execution started
+[2025-09-01 09:58:40] Attempting database connection
+[2025-09-01 09:58:40] Database connection successful
+[2025-09-01 09:58:40] Received input: {"teamLeadName":"Tayyab Hanif","teamLeadEmail":"mrtayyabhanif@gmail.com","teamLeadPhone":"03078857970","teamLeadInstitution":"Startup","teamName":"Pak-IDS","teamSize":"4","problemStatement":"int-collaborations","termsAgreed":true}
+[2025-09-01 09:58:40] JSON decoded successfully
+[2025-09-01 09:58:40] Basic validation passed
+[2025-09-01 09:58:40] Advanced validation passed
+[2025-09-01 09:58:40] Exception: This email is already registered
+[2025-09-01 09:58:45] Script execution started
+[2025-09-01 09:58:51] Script execution started
+[2025-09-01 09:59:02] Script execution started
+[2025-09-01 09:59:55] Script execution started
+[2025-09-01 09:59:55] Attempting database connection
+[2025-09-01 09:59:55] Database connection successful
+[2025-09-01 09:59:55] Received input: {"teamLeadName":"Tayyab Hanif","teamLeadEmail":"mrtayyabhanif@gmail.com","teamLeadPhone":"03078857970","teamLeadInstitution":"Startup","teamName":"Pak-IDS","teamSize":"4","problemStatement":"int-collaborations","termsAgreed":true}
+[2025-09-01 09:59:55] JSON decoded successfully
+[2025-09-01 09:59:55] Basic validation passed
+[2025-09-01 09:59:55] Advanced validation passed
+[2025-09-01 09:59:55] Exception: This email is already registered
+[2025-09-01 10:00:38] Script execution started
+[2025-09-01 10:00:38] Attempting database connection
+[2025-09-01 10:00:38] Database connection successful
+[2025-09-01 10:00:38] Received input: {"teamLeadName":"Tayyab Hanif","teamLeadEmail":"mrtayyabhanif@gmail.com","teamLeadPhone":"03078857970","teamLeadInstitution":"Startup","teamName":"Pak-IDS","teamSize":"4","problemStatement":"int-collaborations","termsAgreed":true}
+[2025-09-01 10:00:38] JSON decoded successfully
+[2025-09-01 10:00:38] Basic validation passed
+[2025-09-01 10:00:38] Advanced validation passed
+[2025-09-01 10:00:38] Exception: This email is already registered
+[2025-09-01 15:06:41] Script execution started
+[2025-09-01 15:06:41] Attempting database connection
+[2025-09-01 15:06:41] Database connection successful
+[2025-09-01 15:06:41] Received input: {"teamLeadName":"Daniyal Khan","teamLeadEmail":"daniyalnahk@gmail.com","teamLeadPhone":"03495215677","teamLeadInstitution":"Institute of Space technology, Islamabad ","teamName":"Automap","teamSize":"2","problemStatement":"education","termsAgreed":true}
+[2025-09-01 15:06:41] JSON decoded successfully
+[2025-09-01 15:06:41] Basic validation passed
+[2025-09-01 15:06:41] Advanced validation passed
+[2025-09-01 15:06:41] Duplicate check passed
+[2025-09-01 15:06:41] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-09-01 15:06:41] Parameters bound, starting transaction
+[2025-09-01 15:06:41] Transaction committed successfully. New ID: 11
+[2025-09-01 15:07:21] Script execution started
+[2025-09-01 15:07:21] Attempting database connection
+[2025-09-01 15:07:21] Database connection successful
+[2025-09-01 15:07:21] Received input: {"teamLeadName":"mohid ammar","teamLeadEmail":"mohidammar550@gmail.com","teamLeadPhone":"03207079762","teamLeadInstitution":"bahria university islamabad","teamName":"panthers of krig","teamSize":"1","problemStatement":"defense-security","termsAgreed":true}
+[2025-09-01 15:07:21] JSON decoded successfully
+[2025-09-01 15:07:21] Basic validation passed
+[2025-09-01 15:07:21] Advanced validation passed
+[2025-09-01 15:07:21] Duplicate check passed
+[2025-09-01 15:07:21] Preparing SQL: INSERT INTO registrations (
+        team_lead_name, team_lead_email, team_lead_phone, 
+        team_lead_institution, team_name, team_size, 
+        problem_statement, terms_agreed, ip_address, user_agent
+    ) VALUES (
+        :name, :email, :phone, :institution, 
+        :teamName, :teamSize, :problemStatement, 
+        TRUE, :ipAddress, :userAgent
+    )
+[2025-09-01 15:07:21] Parameters bound, starting transaction
+[2025-09-01 15:07:21] Transaction committed successfully. New ID: 12
+[2025-09-02 02:04:57] Script execution started
+[2025-09-02 02:04:57] Attempting database connection
+[2025-09-02 02:04:57] Database connection successful
+[2025-09-02 02:04:57] Request method is POST
+[2025-09-02 02:04:57] Basic validation passed
+[2025-09-02 02:04:57] Duplicate check passed
+[2025-09-02 02:04:57] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-02 02:04:57] Parameters bound, starting transaction
+[2025-09-02 02:04:57] Transaction committed successfully. New ID: 1
+[2025-09-04 22:45:57] Script execution started
+[2025-09-04 22:45:57] Attempting database connection
+[2025-09-04 22:45:57] Database connection successful
+[2025-09-04 22:45:57] Exception: Invalid request method
+[2025-09-06 10:48:30] Script execution started
+[2025-09-06 10:48:30] Attempting database connection
+[2025-09-06 10:48:30] Database connection successful
+[2025-09-06 10:48:30] Request method is POST
+[2025-09-06 10:48:30] Basic validation passed
+[2025-09-06 10:48:30] Duplicate check passed
+[2025-09-06 10:48:30] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-06 10:48:30] Parameters bound, starting transaction
+[2025-09-06 10:48:30] Transaction committed successfully. New ID: 2
+[2025-09-09 06:56:30] Script execution started
+[2025-09-09 06:56:30] Attempting database connection
+[2025-09-09 06:56:30] Database connection successful
+[2025-09-09 06:56:30] Request method is POST
+[2025-09-09 06:56:30] Basic validation passed
+[2025-09-09 06:56:30] Duplicate check passed
+[2025-09-09 06:56:30] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-09 06:56:30] Parameters bound, starting transaction
+[2025-09-09 06:56:30] Transaction committed successfully. New ID: 3
+[2025-09-11 03:32:49] Script execution started
+[2025-09-11 03:32:49] Attempting database connection
+[2025-09-11 03:32:49] Database connection successful
+[2025-09-11 03:32:49] Request method is POST
+[2025-09-11 03:32:49] Basic validation passed
+[2025-09-11 03:32:49] Duplicate check passed
+[2025-09-11 03:32:49] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-11 03:32:49] Parameters bound, starting transaction
+[2025-09-11 03:32:49] Transaction committed successfully. New ID: 4
+[2025-09-12 12:26:17] Script execution started
+[2025-09-12 12:26:17] Attempting database connection
+[2025-09-12 12:26:17] Database connection successful
+[2025-09-12 12:26:17] Request method is POST
+[2025-09-12 12:26:17] Basic validation passed
+[2025-09-12 12:26:17] Duplicate check passed
+[2025-09-12 12:26:17] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-12 12:26:17] Parameters bound, starting transaction
+[2025-09-12 12:26:17] Transaction committed successfully. New ID: 5
+[2025-09-13 06:15:54] Script execution started
+[2025-09-13 06:15:54] Attempting database connection
+[2025-09-13 06:15:54] Database connection successful
+[2025-09-13 06:15:54] Request method is POST
+[2025-09-13 06:15:54] Basic validation passed
+[2025-09-13 06:15:54] Duplicate check passed
+[2025-09-13 06:15:54] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-13 06:15:54] Parameters bound, starting transaction
+[2025-09-13 06:15:54] Transaction committed successfully. New ID: 6
+[2025-09-13 07:11:24] Script execution started
+[2025-09-13 07:11:24] Attempting database connection
+[2025-09-13 07:11:24] Database connection successful
+[2025-09-13 07:11:24] Request method is POST
+[2025-09-13 07:11:24] Basic validation passed
+[2025-09-13 07:11:24] Duplicate check passed
+[2025-09-13 07:11:24] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-13 07:11:24] Parameters bound, starting transaction
+[2025-09-13 07:11:24] Transaction committed successfully. New ID: 7
+[2025-09-13 15:43:17] Script execution started
+[2025-09-13 15:43:17] Attempting database connection
+[2025-09-13 15:43:17] Database connection successful
+[2025-09-13 15:43:17] Request method is POST
+[2025-09-13 15:43:17] Basic validation passed
+[2025-09-13 15:43:17] Duplicate check passed
+[2025-09-13 15:43:17] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-13 15:43:17] Parameters bound, starting transaction
+[2025-09-13 15:43:17] Transaction committed successfully. New ID: 8
+[2025-09-13 15:44:17] Script execution started
+[2025-09-13 15:44:17] Attempting database connection
+[2025-09-13 15:44:17] Database connection successful
+[2025-09-13 15:44:17] Request method is POST
+[2025-09-13 15:44:17] Basic validation passed
+[2025-09-13 15:44:17] Duplicate check passed
+[2025-09-13 15:44:17] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-13 15:44:17] Parameters bound, starting transaction
+[2025-09-13 15:44:17] Transaction committed successfully. New ID: 9
+[2025-09-13 15:44:33] Script execution started
+[2025-09-13 15:44:33] Attempting database connection
+[2025-09-13 15:44:33] Database connection successful
+[2025-09-13 15:44:33] Request method is POST
+[2025-09-13 15:44:33] Basic validation passed
+[2025-09-13 15:44:33] Exception: This email is already registered
+[2025-09-15 08:00:44] Script execution started
+[2025-09-15 08:00:44] Attempting database connection
+[2025-09-15 08:00:44] Database connection successful
+[2025-09-15 08:00:44] Request method is POST
+[2025-09-15 08:00:44] Basic validation passed
+[2025-09-15 08:00:44] Duplicate check passed
+[2025-09-15 08:00:44] Preparing SQL: INSERT INTO uai_registrations (
+        team_name, thematic_area, team_lead_name, team_lead_cnic, team_lead_email, 
+        team_lead_phone, team_lead_institution, student_name, university_name, 
+        enrollment_no, project_title, problem_statement, sub_problems, abstract, 
+        datasets, dataset_source, preprocessing, frameworks, model_accuracy, 
+        error_rate, processing_speed, test_coverage, explainability, product_name, 
+        commercial_use, potential_impact, business_model, source_code_url, demo_video_url,
+        ip_address, user_agent, created_at
+    ) VALUES (
+        :team_name, :thematic_area, :team_lead_name, :team_lead_cnic, :team_lead_email, 
+        :team_lead_phone, :team_lead_institution, :student_name, :university_name, 
+        :enrollment_no, :project_title, :problem_statement, :sub_problems, :abstract, 
+        :datasets, :dataset_source, :preprocessing, :frameworks, :model_accuracy, 
+        :error_rate, :processing_speed, :test_coverage, :explainability, :product_name, 
+        :commercial_use, :potential_impact, :business_model, :source_code_url, :demo_video_url,
+        :ip_address, :user_agent, NOW()
+    )
+[2025-09-15 08:00:44] Parameters bound, starting transaction
+[2025-09-15 08:00:44] Transaction committed successfully. New ID: 10

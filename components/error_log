@@ -1,0 +1,4 @@
+[11-Aug-2025 17:37:43 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/turnaroundpakist/public_html/uraanai/components/submit_registration.php on line 114
+[11-Aug-2025 17:39:58 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/turnaroundpakist/public_html/uraanai/components/submit_registration.php on line 114
+[11-Aug-2025 17:42:08 UTC] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_agent' in 'INSERT INTO'
+[11-Aug-2025 17:43:05 UTC] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_agent' in 'INSERT INTO'
