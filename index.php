@@ -3,7 +3,7 @@
 
 <body>
     <!-- Hero Section -->
-<section class="hero-section" style="margin-top:79px;">
+<section class="hero-section" style="margin-top: 70px;">
     <!-- Desktop Version -->
     <div class="desktop-hero" >
         <div class="container hero-top-content">

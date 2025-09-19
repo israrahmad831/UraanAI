@@ -379,13 +379,77 @@ define('BASE_URL', '/uraanai/');
             height: 30px;
         }
 }
+
+/* Navbar container styles */
+.navbar-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Mobile styles for small screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .navbar-brand img {
+        height: 32px !important;
+        max-width: 300px;
+    }
+    
+    #mainHeader.scrolled .navbar-brand img {
+        height: 32px !important;
+        max-width: 300px;
+    }
+}
+
+/* Extra small screens - below 500px */
+@media (max-width: 500px) {
+    .navbar-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .navbar-brand {
+        margin-right: auto;
+    }
+    
+    .navbar-brand img {
+        height: 28px !important;
+        max-width: 250px;
+    }
+    
+    #mainHeader.scrolled .navbar-brand img {
+        height: 28px !important;
+        max-width: 250px;
+    }
+    
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+    
+    #mainHeader {
+        padding: 2px 0;
+        height: 70px;
+    }
+}
        
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav id="mainHeader" class="navbar navbar-expand-lg">
-        <div class="container" style="margin-left:50px; margin-right:50px;">
+        <div class="container navbar-container">
             <a class="navbar-brand" href="<?php echo BASE_URL; ?>">
                 <img src="<?php echo BASE_URL; ?>assets/images/uraan-ai-modal-logo-strip.png" alt="Uraan AI Challenge 2025">
             </a>
