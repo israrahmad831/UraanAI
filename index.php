@@ -406,15 +406,15 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
-<section id="about" class="ai-about-section py-5">
-    <div class="container py-5">
+<section id="about" class="ai-about-section py-1">
+    <div class="container py-1">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <h2 class="section-title">About the Challenge</h2>
             </div>
         </div>
         
-        <div class="ai-layout-container row mt-5">
+        <div class="ai-layout-container row">
             <div class="ai-image-column col-lg-6">
                 <div class="ai-featured-image">
                     <img src="assets/images/about-uraan-ai-techathon-2025.jpg" alt="AI Technology" class="img-fluid">
@@ -470,8 +470,8 @@
 <style>
 .steps-container {
     max-width: 850px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
 }
@@ -2089,7 +2089,8 @@ $(document).ready(function(){
         .section-subtitle {
             color: #666;
             font-size: 1.2rem;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
+            margin-top:10px;
             margin-left: auto;
             margin-right: auto;
         }
