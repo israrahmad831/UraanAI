@@ -429,35 +429,35 @@
                 <div class="steps-container">
                     <!-- STEP 1 -->
                     <div class="step">
-                        <div class="circle-wrapper">
-                            <div class="circle">01</div>
-                            <div class="dotted-line"></div>
-                        </div>
                         <div class="step-content">
-                            <h3>Phase 1 (1 Month Online)</h3>
+                            <div class="step-header">
+                                <div class="circle">01</div>
+                                <h3>Phase 1 (1 Month Online)</h3>
+                            </div>
+                            <div class="dotted-line"></div>
                             <p>Teams work on sub-problems using <strong>licensed datasets with proof, under audit trail.</strong></p>
                         </div>
                     </div>
                 
                     <!-- STEP 2 -->
                     <div class="step" style="margin-top:-10px;">
-                        <div class="circle-wrapper">
-                            <div class="circle">02</div>
-                            <div class="dotted-line"></div>
-                        </div>
                         <div class="step-content">
-                            <h3>Phase 2 (Techathon Day, Islamabad)</h3>
+                            <div class="step-header">
+                                <div class="circle">02</div>
+                                <h3>Phase 2 (Techathon Day, Islamabad)</h3>
+                            </div>
+                            <div class="dotted-line"></div>
                             <p>Shortlisted teams solve advanced problems in GPU-equipped labs. Winners announced the same day.</p>
                         </div>
                     </div>
                 
                     <!-- STEP 3 -->
                     <div class="step" style="margin-top:-10px;">
-                        <div class="circle-wrapper">
-                            <div class="circle">03</div>
-                        </div>
                         <div class="step-content">
-                            <h3>Phase 3 (5-Month Incubation)</h3>
+                            <div class="step-header">
+                                <div class="circle">03</div>
+                                <h3>Phase 3 (5-Month Incubation)</h3>
+                            </div>
                             <p>Winning teams receive mentorship, cloud resources, and pilot opportunities to launch real products/services.</p>
                         </div>
                     </div>
@@ -482,6 +482,7 @@
     align-items: flex-start;
     gap: 20px;
     position: relative;
+    flex-direction: column;
 }
 
 /* Wrapper to keep circle + dotted line aligned */
@@ -490,6 +491,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin: 10px 0;
 }
 
 /* Number circles */
@@ -508,6 +510,7 @@
     position: relative;
     z-index: 1;
     transition: all 0.3s ease;
+    margin: 0 auto;
 }
 
 .circle:hover {
@@ -544,11 +547,19 @@
     padding-top: 10px;
 }
 
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
 .step-content h3 {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
     color: var(--dark-color, #0b093b);
+    flex: 1;
 }
 
 .step-content p {
@@ -663,8 +674,8 @@
  
    
     <!-- Themes Section -->
-    <section id="themes" class="pt-5 pb-0 bg-light">
-        <div class="container py-5">
+    <section id="themes" class="pt-2 pb-0 bg-light">
+        <div class="container py-2">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center ">
                     <h2 class="section-title text-white">Problem Statements</h2>
@@ -2359,6 +2370,38 @@ border: 1px solid rgba(255, 255, 255, 0.3) !important;
 .card-defense { background-image: url('assets/images/defense.jpg'); }
 .card-energy { background-image: url('assets/images/energy.jpg'); }
 .card-international { background-image: url('assets/images/international.jpg'); }
+
+/* Mobile styles for theme cards */
+@media (max-width: 768px) {
+    .theme-card {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .theme-card-img-container {
+        height: 250px;
+    }
+    
+    .theme-card img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-card {
+        max-width: 250px;
+    }
+    
+    .theme-card-img-container {
+        height: 220px;
+    }
+    
+    .theme-card img {
+        width: 85%;
+    }
+}
    </style>
 </body>
 </html>
