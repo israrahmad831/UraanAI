@@ -2016,7 +2016,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <!-- Datasets & Resources Section -->
-<section id="datasets-resources" class="py-5">
+<section id="datasets-resources" class="py-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-5">
@@ -2368,7 +2368,7 @@ $(document).ready(function(){
             </div>
         </div>
         
-        <div class="row mt-5">
+        <div class="row mt-1">
             <div class="col-12 text-center">
                 <a href="ip-data-usage.php" style="background: linear-gradient(to right, #104d6c, #6fb68d) !important;" class="btn reg-button-modal btn-lg mt-4 d-inline-flex align-items-center"> 
                     Read Full Policy    
@@ -2530,7 +2530,7 @@ $(document).ready(function(){
     });
 </script>
 
- <section id="faq-teaser" class="py-5" >
+ <section id="faq-teaser" class="py-2" >
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-6">
@@ -2540,7 +2540,7 @@ $(document).ready(function(){
                     </div>
                 </div>
                 <div class="ai-cards-column col-lg-6">
-                    <div class="faq-category mb-5" id="faqAccordion">
+                    <div class="faq-category mb-2" id="faqAccordion">
                         <div class="faq-item mb-4">
                             <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
                                 <span>Q1. What is Uraan AI Techathon 1.0?</span>
@@ -2600,7 +2600,7 @@ $(document).ready(function(){
                     </div>
                     
                     <div class="col-12 text-center">
-                        <a href="faqs.php" style="background: linear-gradient(to right, #104d6c, #6fb68d) !important;" class="btn reg-button-modal btn-lg mt-4 d-inline-flex align-items-center"> 
+                        <a href="faqs.php" style="background: linear-gradient(to right, #104d6c, #6fb68d) !important;" class="btn reg-button-modal btn-lg mt-4 mb-4 d-inline-flex align-items-center"> 
                             View All FAQs <span class="arrow-circle ms-2"><i class="fas fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -2807,7 +2807,7 @@ $(document).ready(function(){
 
    <!-- Register Section -->
     <section id="register" class="py-5">
-        <div class="container py-5">
+        <div class="container py-2">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <h2 class="section-title">Ready to Compete?</h2>
