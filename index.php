@@ -1117,12 +1117,12 @@
 </style>
 
 
-<section id="awards" class="py-5" style="background: #054554; overflow: hidden; margin-top:-1px;">
+<section id="awards" class="py-2" style="background: #054554; overflow: hidden; margin-top:-1px;">
   <!-- Animated Background (optional) -->
   <div class="particle-layer" id="award-particles"></div>
   <div class="glow-effect"></div>
 
-  <div class="container py-5 position-relative">
+  <div class="container py-2 position-relative">
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
         <h2 class="section-title text-white mb-4">Awards & Recognition</h2>
@@ -1132,53 +1132,58 @@
       </div>
     </div>
 
-    <div class="award-carousel">
-      <!-- GOLD -->
-      <div class="award-card gold-award">
-        <div class="award-image">
-        <!-- Gold Shield SVG -->
-<img src="assets/images/gold-trophy1.png" style="height:350px;" />
+    <!-- Main Awards Container -->
+    <div class="awards-container">
+      <!-- Podium Awards (Gold, Silver, Bronze) -->
+      <div class="podium-awards">
+        <!-- GOLD (Center - Highest) -->
+        <div class="award-card gold-award podium-position gold-position">
+          <div class="award-image">
+            <img src="assets/images/gold-trophy1.png" style="height:470px;" />
+          </div>
+          <div class="award-info">
+            <h3>GOLD CHAMPION</h3>
+            <div class="prize-amount">25,00,000 <span>PKR</span></div>
+            <div class="plus-benefits">+ Incubation Program</div>
+          </div>
         </div>
-        <div class="award-info">
-          <h3>GOLD CHAMPION</h3>
-          <div class="prize-amount">25,00,000 <span>PKR</span></div>
-          <div class="plus-benefits">+ Incubation Program</div>
+
+        <!-- SILVER (Left) -->
+        <div class="award-card silver-award podium-position silver-position">
+          <div class="award-image">
+            <img src="assets/images/silver-trophy1.png" style="height:380px;" />
+          </div>
+          <div class="award-info">
+            <h3>SILVER EXCELLENCE</h3>
+            <div class="prize-amount">20,00,000 <span>PKR</span></div>
+            <div class="plus-benefits">+ Mentorship</div>
+          </div>
+        </div>
+
+        <!-- BRONZE (Right) -->
+        <div class="award-card bronze-award podium-position bronze-position">
+          <div class="award-image">
+            <img src="assets/images/bronze-trophy1.png" style="height:350px;" />
+          </div>
+          <div class="award-info">
+            <h3>BRONZE INNOVATOR</h3>
+            <div class="prize-amount">15,00,000 <span>PKR</span></div>
+            <div class="plus-benefits">+ Mentorship</div>
+          </div>
         </div>
       </div>
 
-      <!-- SILVER -->
-      <div class="award-card silver-award">
-        <div class="award-image">
-      <img src="assets/images/silver-trophy1.png" style="height:350px;" />
-        </div>
-        <div class="award-info">
-          <h3>SILVER EXCELLENCE</h3>
-          <div class="prize-amount">20,00,000 <span>PKR</span></div>
-          <div class="plus-benefits">+ Mentorship</div>
-        </div>
-      </div>
-
-      <!-- BRONZE -->
-      <div class="award-card bronze-award">
-        <div class="award-image">
-          <img src="assets/images/bronze-trophy1.png" style="height:350px;" />
-        </div>
-        <div class="award-info">
-          <h3>BRONZE INNOVATOR</h3>
-          <div class="prize-amount">15,00,000 <span>PKR</span></div>
-          <div class="plus-benefits">+ Mentorship</div>
-        </div>
-      </div>
-
-      <!-- WOMEN-LED CHAMPIONS -->
-      <div class="award-card special-award">
-        <div class="award-image">
-            <img src="assets/images/women-led1.png" style="height:350px;" />
-        </div>
-        <div class="award-info">
-          <h3>WOMEN IN TECH</h3>
-          <div class="prize-amount">10,00,000 <span>PKR</span></div>
-          <div class="plus-benefits">+ Mentorship</div>
+      <!-- Special Award (Separate) -->
+      <div class="special-awards-container">
+        <div class="award-card special-award">
+          <div class="award-image">
+            <img src="assets/images/women-led1.png" style="height:380px;" />
+          </div>
+          <div class="award-info">
+            <h3>WOMEN IN TECH</h3>
+            <div class="prize-amount">10,00,000 <span>PKR</span></div>
+            <div class="plus-benefits">+ Mentorship</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1193,43 +1198,797 @@
 
 
 <style>
- 
-/* Layout (unchanged where possible) */
-#awards{position:relative;min-height:100vh;display:flex;align-items:center}
-.holographic-text{
-  color:white !important;
-  background: transparent !important;
-    
+/* Layout */
+#awards {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.award-carousel{display:flex;justify-content:center;flex-wrap:wrap;gap:32px;padding:40px 0}
-.award-card{position:relative;width:240px;height:430px;display:flex;flex-direction:column;align-items:center}
-.award-image{width:200px;height:300px;display:flex;justify-content:center;align-items:center;margin-bottom:14px}
-.award-image svg{width:100%;height:100%}
-.award-info{text-align:center;color:#fff;padding:0 10px;width:100%; margin-top:15px;}
-.award-info h3{font-size:1.2rem;margin-bottom:8px;text-shadow:0 2px 5px rgba(0,0,0,.5)}
-.prize-amount{font-size:1.9rem;font-weight:800;margin-bottom:4px}
-.prize-amount span{font-size:1rem;font-weight:400}
-.plus-benefits{font-size:1rem;opacity:1; font-weight:600;}
+.holographic-text {
+    color: white !important;
+    background: transparent !important;
+}
 
-.gold-award .award-info h3{color:#FFD700;text-shadow:0 0 10px rgba(255,215,0,.3)}
-.silver-award .award-info h3{color:#C0C0C0;text-shadow:0 0 10px rgba(192,192,192,.3)}
-.bronze-award .award-info h3{color:#CD7F32;text-shadow:0 0 10px rgba(205,127,50,.3)}
-.special-award .award-info h3{color:#FF6EA0;text-shadow:0 0 10px rgba(255,110,160,.3)}
+.awards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
 
-.particle-layer{position:absolute;inset:0;z-index:0}
-.glow-effect{position:absolute;top:50%;left:50%;width:320px;height:320px;background:radial-gradient(circle,rgba(0,255,255,.08) 0%,transparent 70%);transform:translate(-50%,-50%);z-index:0}
-.floating-orb{position:absolute;border-radius:50%;filter:blur(30px);opacity:.24;z-index:0}
-.gold-orb{width:200px;height:200px;background:radial-gradient(circle,#FFD700,transparent 70%);top:18%;left:10%;animation:float 12s ease-in-out infinite}
-.silver-orb{width:150px;height:150px;background:radial-gradient(circle,#C0C0C0,transparent 70%);bottom:15%;right:15%;animation:float 15s ease-in-out infinite reverse}
-.bronze-orb{width:180px;height:180px;background:radial-gradient(circle,#CD7F32,transparent 70%);top:60%;left:20%;animation:float 18s ease-in-out infinite 2s}
-@keyframes float{0%{transform:translate(0,0)}50%{transform:translate(30px,50px)}100%{transform:translate(0,0)}}
+/* Podium Awards Container */
+.podium-awards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
-@media (max-width: 992px){.award-card{width:220px;height:410px}}
-@media (max-width: 768px){
-  .award-carousel{flex-direction:column;align-items:center}
-  .award-card{margin-bottom:28px}
-  .holographic-text{font-size:2.4rem}
+/* Award Card Base Styles */
+.award-card {
+    position: relative;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin: 0 -1px; /* Overlap slightly to touch */
+}
+
+.award-card:hover {
+    transform: scale(1.02);
+}
+
+/* Podium Positioning */
+.podium-position {
+    position: relative;
+}
+
+.gold-position {
+    z-index: 3;
+    order: 2;
+    width: 320px;
+    margin: 0 -30px; /* More overlap for gold */
+}
+
+.silver-position {
+    margin-top: 50px;
+    z-index: 2;
+    order: 1;
+    margin-right: -30px; /* Overlap with gold */
+}
+
+.bronze-position {
+    margin-top: 80px;
+    z-index: 1;
+    order: 3;
+    margin-left: -30px; /* Overlap with gold */
+}
+
+/* Special Awards Container */
+.special-awards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.award-image {
+    width: 220px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.gold-position .award-image {
+    width: 280px;
+    height: 480px;
+}
+
+.award-image svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Text overlay on trophy base - positioned more precisely */
+.award-info {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    width: 85%;
+    z-index: 10;
+    padding: 8px 6px;
+}
+
+.award-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.prize-amount {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    line-height: 1;
+}
+
+.prize-amount span {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.plus-benefits {
+    font-size: 0.9rem;
+    opacity: 1;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    line-height: 1;
+}
+
+.gold-position .award-info h3 {
+    font-size: 1.3rem;
+}
+
+.gold-position .prize-amount {
+    font-size: 1.7rem;
+}
+
+.gold-position .plus-benefits {
+    font-size: 1rem;
+}
+
+/* Specific width adjustments for non-gold awards */
+.silver-award .award-info {
+    width: 50%;
+}
+
+.bronze-award .award-info {
+    width: 50%;
+}
+
+.special-award .award-info {
+    width: 50%;
+}
+
+/* Award specific colors */
+.gold-award .award-info h3 {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, .3);
+}
+
+.silver-award .award-info h3 {
+    color: #363636ff;
+    text-shadow: 0 0 10px rgba(192, 192, 192, .3);
+}
+
+.bronze-award .award-info h3 {
+    color: #CD7F32;
+    text-shadow: 0 0 10px rgba(205, 127, 50, .3);
+}
+
+.special-award .award-info h3 {
+    color: #FF6EA0;
+    text-shadow: 0 0 10px rgba(255, 110, 160, .3);
+}
+
+/* Specific text size adjustments for non-gold awards */
+.silver-award .award-info h3 {
+    font-size: 0.8rem;
+}
+
+.bronze-award .award-info h3 {
+    font-size: 0.8rem;
+}
+
+.special-award .award-info h3 {
+    font-size: 0.8rem;
+}
+
+.silver-award .prize-amount {
+    font-size: 1rem;
+}
+
+.bronze-award .prize-amount {
+    font-size: 1rem;
+}
+
+.special-award .prize-amount {
+    font-size: 1rem;
+}
+
+.silver-award .plus-benefits {
+    font-size: 0.7rem;
+}
+
+.bronze-award .plus-benefits {
+    font-size: 0.7rem;
+}
+
+.special-award .plus-benefits {
+    font-size: 0.7rem;
+}
+
+/* Background effects */
+.particle-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.glow-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(0, 255, 255, .08) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Floating orbs */
+.floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: .24;
+    z-index: 0;
+}
+
+.gold-orb {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #FFD700, transparent 70%);
+    top: 18%;
+    left: 10%;
+    animation: float 12s ease-in-out infinite;
+}
+
+.silver-orb {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #C0C0C0, transparent 70%);
+    bottom: 15%;
+    right: 15%;
+    animation: float 15s ease-in-out infinite reverse;
+}
+
+.bronze-orb {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, #CD7F32, transparent 70%);
+    top: 60%;
+    left: 20%;
+    animation: float 18s ease-in-out infinite 2s;
+}
+
+/* Float animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(30px, 50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .awards-container {
+        gap: 0px;
+    }
+    
+    .award-card {
+        margin: 0 -2px; /* Slightly more overlap on smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .award-card {
+        width: 220px;
+        margin: 0 -3px; /* More overlap for smaller cards */
+    }
+    
+    .gold-position {
+        width: 260px;
+        margin: 0 -5px;
+    }
+    
+    .awards-container {
+        gap: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    
+    .podium-awards {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .award-card {
+        margin: 0 -5px; /* Overlap on mobile */
+    }
+    
+    /* Keep podium structure on mobile */
+    .silver-position {
+        margin-top: 40px;
+        margin-right: -15px;
+    }
+    
+    .bronze-position {
+        margin-top: 60px;
+        margin-left: -15px;
+    }
+    
+    .special-awards-container {
+        width: 100%;
+    }
+    
+    .award-card {
+        width: 200px;
+    }
+    
+    .gold-position {
+        width: 240px;
+    }
+    
+    .award-image {
+        width: 160px;
+        height: 300px;
+    }
+    
+    .gold-position .award-image {
+        width: 200px;
+        height: 360px;
+    }
+    
+    .award-image img {
+        height: 250px !important;
+    }
+    
+    .gold-position .award-image img {
+        height: 300px !important;
+    }
+    
+    .silver-position .award-image img {
+        height: 240px !important;
+    }
+    
+    .bronze-position .award-image img {
+        height: 220px !important;
+    }
+    
+    .special-award .award-image img {
+        height: 240px !important;
+    }
+    
+    .award-info {
+        padding: 6px 4px;
+        bottom: 50px;
+        width: 60%;
+    }
+    
+    .award-info h3 {
+        font-size: 0.1rem;
+    }
+    
+    .gold-position .award-info h3 {
+        font-size: 0.9rem;
+    }
+    
+    .prize-amount {
+        font-size: 0.45rem;
+    }
+    
+    .gold-position .prize-amount {
+        font-size: 1.2rem;
+    }
+    
+    .plus-benefits {
+        font-size: 0.25rem;
+    }
+    
+    .gold-position .plus-benefits {
+        font-size: 0.7rem;
+    }
+    
+    /* Specific selectors for silver, bronze, and special awards */
+    .silver-award .award-info h3 {
+        font-size: 0.5rem;
+    }
+    
+    .bronze-award .award-info h3 {
+        font-size: 0.5rem;
+    }
+    
+    .special-award .award-info h3 {
+        font-size: 0.5rem;
+    }
+    
+    .silver-award .prize-amount {
+        font-size: 0.65rem;
+    }
+    
+    .bronze-award .prize-amount {
+        font-size: 0.65rem;
+    }
+    
+    .special-award .prize-amount {
+        font-size: 0.65rem;
+    }
+    
+    .silver-award .plus-benefits {
+        font-size: 0.4rem;
+    }
+    
+    .bronze-award .plus-benefits {
+        font-size: 0.4rem;
+    }
+    
+    .special-award .plus-benefits {
+        font-size: 0.4rem;
+    }
+    
+    /* Move award info up for silver, bronze, and special awards */
+    .silver-award .award-info {
+        bottom: 53px;
+    }
+    
+    .bronze-award .award-info {
+        bottom: 53px;
+    }
+    
+    .special-award .award-info {
+        bottom: 53px;
+    }
+    
+    .holographic-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .award-card {
+        width: 140px;
+    }
+    
+    .gold-position {
+        width: 180px;
+    }
+    
+    .award-image {
+        width: 120px;
+        height: 220px;
+    }
+    
+    .gold-position .award-image {
+        width: 150px;
+        height: 280px;
+    }
+    
+    .award-image img {
+        height: 180px !important;
+    }
+    
+    .gold-position .award-image img {
+        height: 220px !important;
+    }
+    
+    .silver-position .award-image img {
+        height: 170px !important;
+    }
+    
+    .bronze-position .award-image img {
+        height: 160px !important;
+    }
+    
+    .special-award .award-image img {
+        height: 170px !important;
+    }
+    
+    .award-info {
+        padding: 4px 3px;
+        bottom: 15px;
+        width: 75%;
+    }
+    
+    .award-info h3 {
+        font-size: 0.6rem;
+        margin-bottom: 2px;
+    }
+    
+    .gold-position .award-info h3 {
+        font-size: 0.75rem;
+    }
+    
+    .prize-amount {
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+    }
+    
+    .gold-position .prize-amount {
+        font-size: 1rem;
+    }
+    
+    .prize-amount span {
+        font-size: 0.5rem;
+    }
+    
+    .plus-benefits {
+        font-size: 0.5rem;
+    }
+    
+    .gold-position .plus-benefits {
+        font-size: 0.6rem;
+    }
+    
+    /* Adjust award info positioning */
+    .gold-position .award-info {
+        bottom: 38px; /* Move gold award info up by 7px */
+        width: 50%;
+    }
+    
+    .silver-award .award-info {
+        bottom: 36px; /* Move silver award info down by 2px */
+    }
+    
+    .bronze-award .award-info {
+        bottom: 40px; /* Move bronze award info down by 2px */
+    }
+    
+    .special-award .award-info {
+        bottom: 36px; /* Move special award info down by 2px */
+    }
+}
+
+@media (max-width: 400px) {
+    .award-card {
+        width: 110px;
+    }
+    
+    .gold-position {
+        width: 140px;
+    }
+    
+    .award-image {
+        width: 90px;
+        height: 170px;
+    }
+    
+    .gold-position .award-image {
+        width: 120px;
+        height: 220px;
+    }
+    
+    .award-image img {
+        height: 140px !important;
+    }
+    
+    .gold-position .award-image img {
+        height: 180px !important;
+    }
+    
+    .silver-position .award-image img {
+        height: 130px !important;
+    }
+    
+    .bronze-position .award-image img {
+        height: 120px !important;
+    }
+    
+    .special-award .award-image img {
+        height: 130px !important;
+    }
+    
+    .award-info {
+        padding: 3px 2px;
+        bottom: 12px;
+        width: 70%;
+    }
+    
+    .award-info h3 {
+        font-size: 0.45rem;
+        margin-bottom: 1px;
+    }
+    
+    .gold-position .award-info h3 {
+        font-size: 0.6rem;
+    }
+    
+    .prize-amount {
+        font-size: 0.6rem;
+        margin-bottom: 0;
+    }
+    
+    .gold-position .prize-amount {
+        font-size: 0.75rem;
+    }
+    
+    .prize-amount span {
+        font-size: 0.4rem;
+    }
+    
+    .plus-benefits {
+        font-size: 0.4rem;
+    }
+    
+    .gold-position .plus-benefits {
+        font-size: 0.5rem;
+    }
+    
+    /* Decrease text size for silver, bronze, and special awards */
+    .silver-award .award-info h3 {
+        font-size: 0.35rem;
+    }
+    
+    .bronze-award .award-info h3 {
+        font-size: 0.35rem;
+    }
+    
+    .special-award .award-info h3 {
+        font-size: 0.35rem;
+    }
+    
+    .silver-award .prize-amount {
+        font-size: 0.5rem;
+    }
+    
+    .bronze-award .prize-amount {
+        font-size: 0.5rem;
+    }
+    
+    .special-award .prize-amount {
+        font-size: 0.5rem;
+    }
+    
+    .silver-award .plus-benefits {
+        font-size: 0.3rem;
+    }
+    
+    .bronze-award .plus-benefits {
+        font-size: 0.3rem;
+    }
+    
+    .special-award .plus-benefits {
+        font-size: 0.3rem;
+    }
+  
+    
+    .gold-position .award-info {
+        bottom: 25px; /* Moved down from 12px */
+    }
+    
+    .silver-award .award-info {
+        bottom: 30px; /* Moved down from 12px */
+        width: 50%;
+    }
+    
+    .bronze-award .award-info {
+        bottom: 34px; /* Moved down from 12px */
+        width: 50%;
+
+    }
+    
+    .special-award .award-info {
+        bottom: 35px; /* Moved down from 12px */
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .awards-container {
+        padding: 20px 0;
+        gap: 20px;
+    }
+    
+    .award-card {
+        width: 95px;
+    }
+    
+    .gold-position {
+        width: 120px;
+    }
+    
+    .award-image {
+        width: 75px;
+        height: 140px;
+    }
+    
+    .gold-position .award-image {
+        width: 100px;
+        height: 180px;
+    }
+    
+    .award-image img {
+        height: 110px !important;
+    }
+    
+    .gold-position .award-image img {
+        height: 150px !important;
+    }
+    
+    .silver-position .award-image img {
+        height: 100px !important;
+    }
+    
+    .bronze-position .award-image img {
+        height: 90px !important;
+    }
+    
+    .special-award .award-image img {
+        height: 100px !important;
+    }
+    
+    .silver-position {
+        margin-top: 30px;
+    }
+    
+    .bronze-position {
+        margin-top: 50px;
+    }
+    
+    .award-info {
+        padding: 2px 1px;
+        bottom: 10px;
+        width: 65%;
+    }
+    
+    .award-info h3 {
+        font-size: 0.35rem;
+        margin-bottom: 1px;
+    }
+    
+    .gold-position .award-info h3 {
+        font-size: 0.5rem;
+    }
+    
+    .prize-amount {
+        font-size: 0.45rem;
+        margin-bottom: 0;
+    }
+    
+    .gold-position .prize-amount {
+        font-size: 0.6rem;
+    }
+    
+    .prize-amount span {
+        font-size: 0.3rem;
+    }
+    
+    .plus-benefits {
+        font-size: 0.3rem;
+    }
+    
+    .gold-position .plus-benefits {
+        font-size: 0.4rem;
+    }
+    
+    .holographic-text {
+        font-size: 1.8rem;
+    }
 }
 </style>
 
